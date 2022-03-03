@@ -1,14 +1,13 @@
-def fizzbuzz(num)
-  result = 0
-  (a..b).each do |number|
-    if number%3 == 0
-      puts Fizz
-    elsif number%5 == 0
-      puts Buzz
-    elsif number%15 == 0
-      puts FizzBuzz
-    else 
-      puts number.to_s
-    end
-    return result
+(1..100).each do |num|
+ 
+   if num%15==0
+    puts "FizzBuzz"
+   elsif num%5==0
+    puts "Buzz"
+   elsif num%3==0
+    puts "Fiz"
+   else
+    puts num
+   end
+
 end
